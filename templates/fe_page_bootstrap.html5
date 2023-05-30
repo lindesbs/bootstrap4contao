@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="<?= $this->language ?>"<?php if ($this->isRTL): ?> dir="rtl"<?php endif; ?>>
+<head>
+
+    <?php $this->block('head'); ?>
+    <meta charset="<?= $this->charset ?>">
+    <title><?= $this->title ?></title>
+    <base href="<?= $this->base ?>">
+
+    <?php $this->block('meta'); ?>
+    <meta name="robots" content="<?= $this->robots ?>">
+    <meta name="description" content="<?= Contao\StringUtil::substr($this->description, 320) ?>">
+    <meta name="generator" content="Contao Open Source CMS">
+    <?php $this->endblock(); ?>
+
+    <?php if ($this->canonical): ?>
+    <link rel="canonical" href="<?= $this->canonical ?>">
+    <?php endif; ?>
+
+    <?= $this->viewport ?>
+    <?= $this->framework ?>
+    <?= $this->stylesheets ?>
+    <?= $this->mooScripts ?>
+    <?= $this->head ?>
+    <?php $this->endblock(); ?>
+
+</head>
+<body id="top"<?php if ($this->class): ?> class="d-flex flex-column h-100 <?= $this->class ?>"<?php endif; ?><?php if ($this->onload): ?> onload="<?= $this->onload ?>"<?php endif; ?>>
+
+<?php $this->sections('top'); ?>
+
+<div class="container-fluid">
+
+    <?php $this->block('header'); ?>
+    <header id="header" class=" bg-light">
+
+        <div class="container">
+            <?= $this->header ?>
+        </div>
+    </header>
+
+    <?php $this->endblock(); ?>
+
+    <?php $this->sections('before'); ?>
+
+    <?php $this->block('container'); ?>
+    <div class="container">
+
+        <?php $this->block('main'); ?>
+        <main id="main">
+            <div class="inside">
+                <?= $this->main ?>
+            </div>
+            <?php $this->sections('main'); ?>
+        </main>
+        <?php $this->endblock(); ?>
+
+        <?php $this->block('left'); ?>
+        <?php if ($this->left): ?>
+        <aside id="left">
+            <div class="inside">
+                <?= $this->left ?>
+            </div>
+        </aside>
+        <?php endif; ?>
+        <?php $this->endblock(); ?>
+
+        <?php $this->block('right'); ?>
+        <?php if ($this->right): ?>
+        <aside id="right">
+            <div class="inside">
+                <?= $this->right ?>
+            </div>
+        </aside>
+        <?php endif; ?>
+        <?php $this->endblock(); ?>
+
+    </div>
+    <?php $this->endblock(); ?>
+
+    <?php $this->sections('after'); ?>
+
+    <?php $this->block('footer'); ?>
+
+    <footer id="footer" class="footer mt-auto py-3 bg-light">
+        <div class="inside container">
+            <?= $this->footer ?>
+        </div>
+    </footer>
+    <?php $this->endblock(); ?>
+
+</div>
+
+<?php $this->sections('bottom'); ?>
+
+<?= $this->mootools ?>
+<?= $this->jsonLdScripts ?>
+</body>
+</html>
