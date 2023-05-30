@@ -15,8 +15,8 @@
         }
     ],
     "require": {},
-    "extra": {
-        "lindesbs/bootstrap4contao": "./"
-     }
+    "config": {
+        "vendor-dir": "./"
+    },
 }
 
