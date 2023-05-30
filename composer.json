@@ -13,10 +13,9 @@
             "name": "Stefan Lindecke",
             "email": "git@trion.de"
         }
-    ],
-    "require": {},
-    "config": {
-        "vendor-dir": "./"
+    ],    
+    "extra": {
+        "contao-manager-plugin": "lindesbs\\Bootstrap4ontaoBundle\\ContaoManager\\Plugin"
     }
 }
 
