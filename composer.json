@@ -15,7 +15,7 @@
         }
     ],    
     "extra": {
-        "contao-manager-plugin": "lindesbs\\Bootstrap4ontaoBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "lindesbs\\Bootstrap4ContaoBundle\\ContaoManager\\Plugin"
     }
 }
 
