@@ -13,6 +13,9 @@
             "email": "git@trion.de"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "lindesbs/bootstrap4contao": "./"
+     }
 }
 
