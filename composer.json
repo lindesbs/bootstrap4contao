@@ -2,6 +2,7 @@
     "name": "lindesbs/bootstrap4contao",
     "description": "bootstrap Grundkonfiguration. Wird immer weiter angepasst",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "lindesbs\\Bootstrap4contao\\": "src/"
