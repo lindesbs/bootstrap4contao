@@ -5,17 +5,17 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "lindesbs\\Bootstrap4contao\\": "src/"
+            "lindesbs\\bootstrap4contao\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Stefan Lindecke",
-            "email": "git@trion.de"
+            "email": "git@ktrion.de"
         }
     ],    
     "extra": {
-        "contao-manager-plugin": "lindesbs\\Bootstrap4ContaoBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "lindesbs\\bootstrap4contao\\ContaoManager\\Plugin"
     }
 }
 

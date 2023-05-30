@@ -1,12 +1,12 @@
-<?php
+<?php declare(strict_types=1);
 
-namespace lindesbs\Bootstrap4Contao\ContaoManager;
+namespace lindesbs\bootstrap4contao\ContaoManager;
 
+use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Contao\CoreBundle\ContaoCoreBundle;
-use lindesbs\Bootstrap4Contao\Bootstrap4ContaoBundle;
+use lindesbs\bootstrap4contao\Bootstrap4ContaoBundle;
 
 class Plugin implements BundlePluginInterface
 {
