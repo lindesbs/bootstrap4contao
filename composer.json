@@ -17,6 +17,6 @@
     "require": {},
     "config": {
         "vendor-dir": "./"
-    },
+    }
 }
 
