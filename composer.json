@@ -3,6 +3,7 @@
     "description": "bootstrap Grundkonfiguration. Wird immer weiter angepasst",
     "type": "contao-bundle",
     "license": "MIT",
+    "version": "v0.1",
     "autoload": {
         "psr-4": {
             "lindesbs\\bootstrap4contao\\": "src/"
