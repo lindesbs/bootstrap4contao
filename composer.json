@@ -2,18 +2,22 @@
     "name": "lindesbs/bootstrap4contao",
     "description": "bootstrap Grundkonfiguration. Wird immer weiter angepasst",
     "type": "contao-bundle",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "lindesbs\\bootstrap4contao\\": "src/"
-        }
-    },
+    "homepage": "https://chektrion.de",
+    "license": "LGPL-3.0-or-later",
     "authors": [
         {
             "name": "Stefan Lindecke",
             "email": "git@ktrion.de"
         }
-    ],    
+    ],
+    "require": {
+        "contao/core-bundle": "^4.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "lindesbs\\bootstrap4contao\\": "src/"
+        }
+    },
     "extra": {
         "contao-manager-plugin": "lindesbs\\bootstrap4contao\\ContaoManager\\Plugin"
     }

@@ -1,4 +1,3 @@
-<h1 class="divider"><?= $this->headline ?></h1>
 <div class="container">
 <?php if ($this->teaserOnly): ?>
 
